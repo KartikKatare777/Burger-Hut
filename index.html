@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut - Home of Juicy Burgers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #f5f5f5;
+            background-color: #121212;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ff4500;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1a1a1a;
+            height: 70vh;
+            color: #f5f5f5;
+            padding: 20px;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3rem;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #ff4500;
+            border: none;
+            padding: 15px 25px;
+            color: #f5f5f5;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #e03e00;
+        }
+        .hero img {
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .menu-section, .about-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu-section h3, .about-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            margin: 15px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+        }
+        .menu-item h4 {
+            margin: 10px 0;
+        }
+        .contact-section {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-section h3 {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Burger Hut</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <div>
+            <h2>Delicious Burgers Made Fresh</h2>
+            <p>Experience the best flavors in town. Fresh ingredients, juicy patties, and love in every bite.</p>
+            <button>Order Now</button>
+        </div>
+        <img src="burger.png.jpg" alt="Burger">
+    </section>
+    <section id="menu" class="menu-section">
+        <h3>Our Menu</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="cheeseburger.jpg.jpg" alt="Cheeseburger">
+                <h4>Cheeseburger</h4>
+                <p>₹69</p>
+            </div>
+            <div class="menu-item">
+                <img src="veggieburger.jpg.jpg" alt="Veggie Burger">
+                <h4>Veggie Burger</h4>
+                <p>₹99</p>
+            </div>
+            <div class="menu-item">
+                <img src="baconburger.jpg.jpg" alt="Bacon Burger">
+                <h4>Bacon Burger</h4>
+                <p>₹199</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <h3>About Us</h3>
+        <p>At Burger Hut, we believe in serving food that not only tastes great but also brings people together. Our story started with a dream to craft the best burgers in town, and today, we are proud to share our passion with you.</p>
+    </section>
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <p>Have questions or want to place an order? Reach out to us!</p>
+        <p>Email: contact@burgerhut.com</p>
+        <p>Phone: (91+) 95273451XXXX </p>
+        <p>Address: 123 Burger Lane, Foodie City</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Burger Hut. All rights reserved.</p>
+    </footer>
+</body>
+</html>
